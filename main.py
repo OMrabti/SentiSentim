@@ -8,13 +8,13 @@ class Main:
     def __init__(self):
         app = QApplication(sys.argv)
         print 'Main----'
-        form = QForm('TweeLab')
+        form = QForm('Sentilyse')
         self.interceptor = Interceptor()
         self.interceptor.set_form(form)
 
         form.add_text_field('query', self.interceptor)
         form.add_labels_panel(['sentence', 'result', 'time'])
-        form.add_buttons_panel(['Stop', 'Analyse'], self.interceptor)
+        form.add_buttons_panel(['Quit', 'Analyse'], self.interceptor)
 
         form.build()
         form.show()

@@ -44,7 +44,7 @@ class Interceptor(object):
                 thread.start_new_thread(self.analyse, (query,))
 
                 return True
-            elif request == 'Stop':
+            elif request == 'Quit':
                 self.stop()
 
         except Exception as e:

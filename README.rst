@@ -1,4 +1,4 @@
-TweeLab
+Sentilyse
 =======
 
 A Sentiment Analysis example getting data from Stanford Sentiment Treebank V1.0 dataset and

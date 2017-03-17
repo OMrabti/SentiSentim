@@ -71,7 +71,7 @@ class Core(object):
         :return: spark_context, sql_context
         :rtype:
         """
-        # conf = SparkConf().setAppName('TweeLab').setMaster('spark://192.168.1.71:7077')
+        # conf = SparkConf().setAppName('Sentilyse').setMaster('spark://192.168.1.71:7077')
         spark_context = SparkContext()
         sql_context = SQLContext(spark_context)
         return spark_context, sql_context
