@@ -12,8 +12,8 @@ class Main:
         self.interceptor = Interceptor()
         self.interceptor.set_form(form)
 
-        form.add_text_field('query', self.interceptor)
-        form.add_labels_panel(['sentence', 'result', 'time'])
+        form.add_text_field('Query', self.interceptor)
+        form.add_labels_panel(['sentence', 'language', 'result', 'time'])
         form.add_buttons_panel(['Quit', 'Analyse'], self.interceptor)
 
         form.build()

@@ -5,6 +5,12 @@ from thread import start_new_thread
 from time import time
 from os import path, getcwd
 from sys import exit
+from langdetect import detect
+from microsofttranslator import Translator
+from core.helpers import json_file_to_object, get_absolute_path, chunkstring
+
+translator = Translator('sentilyse', '8DqdkAzW8UN9ClRTuBoy0lS5DuFkkh/vMVgnaLcXKQY=')
+language_codes = json_file_to_object(get_absolute_path() + '/resources/language-codes.json')
 
 
 class Interceptor(object):
@@ -39,8 +45,8 @@ class Interceptor(object):
         """
         print request
         try:
-            if request == 'Analyse' or request == 'query':
-                query = self.form.get_text_field('query').get_value()
+            if request == 'Analyse' or request == 'Query':
+                query = self.form.get_text_field('Query').get_value().lower()
                 start_new_thread(self.analyse, (query,))
 
                 return True
@@ -55,17 +61,31 @@ class Interceptor(object):
         try:
             start_time = time()
             sentence = self.form.components['labels_panel'].labels['sentence']
+            language = self.form.components['labels_panel'].labels['language']
             result = self.form.components['labels_panel'].labels['result']
             elapsed_time = self.form.components['labels_panel'].labels['time']
-            sentence.setText('The sentence is:' + query + '\n')
-            result.setText('Analysing ...' + '\n')
-            result.setText('Prediction: ' + self.core.predict(query))
+            sentence.setText('The sentence is:  Loading ...')
+            language.setText('Original language :  Loading ...')
+            result.setText('Prediction: Loading ...')
+            elapsed_time.setText('Elapsed Time:  Loading ...')
+            for lang in language_codes:
+                if lang['alpha2'] == detect(query):
+                    language.setText('Original language : ' + lang['English'] + '\n')
+
+            translated_query = translator.translate(query, 'en', detect(query))
+            chunked_text = ''
+            for chunk in chunkstring('The sentence is: ' + translated_query, 90):
+                chunked_text += (chunk + '\n')
+            sentence.setText(chunked_text + '\n')
+            sentence.repaint()
+            result.repaint()
+            result.setText('Prediction: ' + self.core.predict(translated_query))
             elapsed_time.setText('Elapsed Time: ' + str(round((time() - start_time) * 1000)) + ' ms')
             result.repaint()
             QApplication.processEvents()
         except Exception as e:
-            self.stop()
             print e
+            self.stop()
 
     def set_form(self, form):
         self.form = form

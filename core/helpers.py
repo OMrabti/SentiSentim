@@ -4,6 +4,7 @@ from pymongo import MongoClient
 import subprocess
 import platform
 import os
+import json
 
 mongod = ''  # get_mongod()
 
@@ -51,11 +52,29 @@ def get_config_param(section, option):
         return param
 
 
+# Generic function
+def json_file_to_object(path):
+    """
+    Converts a json file into a json object
+    :param path: the path to the json file
+    :type path: str
+    :return: a json object from the given file
+    :rtype: object
+    """
+    with open(path) as data_file:
+        list_json = json.load(data_file)
+    return list_json
+
+
 def get_db():
     print 'mongod pid : ', mongod.pid
     client = MongoClient()
     db = client.tweety
     return db
+
+
+def chunkstring(string, length):
+    return (string[0 + i:length + i] for i in range(0, len(string), length))
 
 
 def get_tweepy_api():

@@ -10,6 +10,7 @@ class QForm(QWidget):
         QWidget.__init__(self)
         # Layout Init.
         self.setGeometry(300, 300, 600, 100)
+        self.setFixedSize(600, 400)
         self.setWindowTitle(title)
         # Attributes
         self.components = {}

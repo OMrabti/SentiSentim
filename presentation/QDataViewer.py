@@ -10,6 +10,7 @@ class QDataViewer(QWidget):
         QWidget.__init__(self)
         # Layout Init.
         self.setGeometry(300, 300, 600, 100)
+        self.setFixedSize(self.width(), self.height())
         self.setWindowTitle('ArganRecogn')
         # Attributes
         self.filename = ""
