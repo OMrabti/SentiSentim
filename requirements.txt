@@ -1,3 +1,5 @@
 tweepy
 pymongo
+findspark
+nltk
 GraphLab-Create

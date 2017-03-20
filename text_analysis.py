@@ -1,41 +1,38 @@
-import string
-import os
-import sys
-import nltk
+from string import punctuation
+from os import path
+from sys import exit
+from findspark import init
 
-# nltk.download('punkt')
-# nltk.download('porter')
-# nltk.download("stopwords")
 try:
     from nltk.tokenize import word_tokenize
     from nltk.corpus import stopwords
     from nltk.stem.porter import PorterStemmer
 except ImportError as e:
+    import nltk
+
+    nltk.download('punkt')
+    nltk.download('porter')
+    nltk.download("stopwords")
     print("Can not import NLTK Modules", e)
 
 try:
-    import findspark
 
-    findspark.init()
-
-    # from pyspark import SparkConsentence
+    init()
     from pyspark.mllib.feature import HashingTF
     from pyspark.mllib.regression import LabeledPoint
     from pyspark.mllib.classification import NaiveBayes, NaiveBayesModel
 
     from pyspark.ml.classification import MultilayerPerceptronClassifier
     from pyspark.ml.evaluation import MulticlassClassificationEvaluator
-    from pyspark.ml import Pipeline
-    from pyspark.ml import PipelineModel
-    from pyspark.ml.feature import Tokenizer
-    from pyspark.ml.feature import HashingTF as HTF
+    from pyspark.ml import Pipeline, PipelineModel
+    from pyspark.ml.feature import Tokenizer, HashingTF as HTF
 
 except ImportError as e:
     print("Can not import Spark Modules", e)
-    sys.exit(1)
+    exit(1)
 
 # Module-level global variables for the `tokenize` function below
-PUNCTUATION = set(string.punctuation)
+PUNCTUATION = set(punctuation)
 STOPWORDS = set(stopwords.words('english'))
 STEMMER = PorterStemmer()
 
@@ -110,7 +107,7 @@ def get_naive_bayes_model(spark_context, train_hashed, model_folder):
     :return: a trained Naive Bayes model
     :rtype: NaiveBayesModel
     """
-    if not os.path.exists(model_folder):
+    if not path.exists(model_folder):
 
         # Train a Naive Bayes model on the training data
         model = NaiveBayes.train(train_hashed)
@@ -199,7 +196,7 @@ def classify_using_nn(data, spark_context, model_folder):
     train, test = data.randomSplit([0.6, 0.4], 1234)
     # if the model is already trained and saved
     # we just load it
-    if not os.path.exists(model_folder):
+    if not path.exists(model_folder):
         # Transforming data
         tokenizer, hasher, classifier = get_data_transformers()
 

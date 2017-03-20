@@ -1,31 +1,15 @@
-import graphlab as gl
+from graphlab import SArray, SFrame
 from text_analysis import *
-from core.helpers import *
+from core.helpers import get_absolute_path, get_config_param
 import findspark
 import ConfigParser
 
 try:
 
     findspark.init()
-    from pyspark import *
     from pyspark import SparkContext, SparkConf
-
-    from pyspark.sql import SparkSession
-    from pyspark.sql import SQLContext
+    from pyspark.sql import SparkSession, SQLContext
     from pyspark.sql.types import StructField, StringType, IntegerType, StructType
-
-    from pyspark.mllib.feature import HashingTF
-    from pyspark.mllib.regression import LabeledPoint
-    from pyspark.mllib.classification import NaiveBayes, NaiveBayesModel
-
-    from pyspark.ml import Pipeline
-    from pyspark.ml import PipelineModel
-
-    from pyspark.ml.classification import LogisticRegression
-    from pyspark.ml.evaluation import BinaryClassificationEvaluator
-    from pyspark.ml.classification import MultilayerPerceptronClassifier
-    from pyspark.ml.evaluation import MulticlassClassificationEvaluator
-    from pyspark.ml.feature import HashingTF, Tokenizer
 
     print("Successfully imported Spark Modules")
 
@@ -133,7 +117,7 @@ class Core(object):
         :return:
         :rtype: SFrame
         """
-        data_sframe = gl.SFrame(data_frame.toPandas())
+        data_sframe = SFrame(data_frame.toPandas())
         sentiment_array = data_sframe.select_column('sentiment')
         target_array = []
         for x in sentiment_array:
@@ -144,7 +128,7 @@ class Core(object):
                 target_array.append(3)
                 print ex
 
-        data_sframe.add_column(gl.SArray(target_array, dtype=int), name='target')
+        data_sframe.add_column(SArray(target_array, dtype=int), name='target')
         print data_sframe
         return data_sframe.dropna()
 

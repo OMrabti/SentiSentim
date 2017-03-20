@@ -1,6 +1,6 @@
-from presentation.QForm import QForm
 import sys
-from PySide.QtGui import *
+from presentation.QForm import QForm
+from PySide.QtGui import QApplication
 from presentation.interceptor.Interceptor import Interceptor as Interceptor
 
 

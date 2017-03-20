@@ -1,10 +1,10 @@
 from core.Core import Core
-import thread
-import time
 from PySide.QtGui import QApplication
-import sys
-import os
-import platform
+from platform import system as pl_system
+from thread import start_new_thread
+from time import time
+from os import path, getcwd
+from sys import exit
 
 
 class Interceptor(object):
@@ -21,13 +21,13 @@ class Interceptor(object):
         :return: The absolute path to the current working directory
         :rtype: basestring
         """
-        system = platform.system()
+        system = pl_system()
         if system == 'Darwin':
-            return os.getcwd()
+            return getcwd()
         elif system == 'Linux':
-            return os.path.dirname(os.getcwd())
+            return path.dirname(getcwd())
         else:
-            return os.getcwd()
+            return getcwd()
 
     def intercept(self, request):
         """
@@ -41,7 +41,7 @@ class Interceptor(object):
         try:
             if request == 'Analyse' or request == 'query':
                 query = self.form.get_text_field('query').get_value()
-                thread.start_new_thread(self.analyse, (query,))
+                start_new_thread(self.analyse, (query,))
 
                 return True
             elif request == 'Quit':
@@ -53,14 +53,14 @@ class Interceptor(object):
 
     def analyse(self, query):
         try:
-            start_time = time.time()
+            start_time = time()
             sentence = self.form.components['labels_panel'].labels['sentence']
             result = self.form.components['labels_panel'].labels['result']
             elapsed_time = self.form.components['labels_panel'].labels['time']
             sentence.setText('The sentence is:' + query + '\n')
             result.setText('Analysing ...' + '\n')
             result.setText('Prediction: ' + self.core.predict(query))
-            elapsed_time.setText('Elapsed Time: ' + str(round((time.time() - start_time) * 1000)) + ' ms')
+            elapsed_time.setText('Elapsed Time: ' + str(round((time() - start_time) * 1000)) + ' ms')
             result.repaint()
             QApplication.processEvents()
         except Exception as e:
@@ -72,4 +72,4 @@ class Interceptor(object):
 
     def stop(self):
         print 'Stop'
-        sys.exit(0)
+        exit(0)
