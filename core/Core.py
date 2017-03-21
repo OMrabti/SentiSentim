@@ -1,12 +1,13 @@
 from graphlab import SArray, SFrame
 from text_analysis import *
 from core.helpers import get_absolute_path, get_config_param
-import findspark
-import ConfigParser
+from sys import exit
+from findspark import init
+from ConfigParser import ConfigParser
 
 try:
 
-    findspark.init()
+    init()
     from pyspark import SparkContext, SparkConf
     from pyspark.sql import SparkSession, SQLContext
     from pyspark.sql.types import StructField, StringType, IntegerType, StructType
@@ -15,13 +16,13 @@ try:
 
 except ImportError as e:
     print("Can not import Spark Modules", e)
-    sys.exit(1)
+    exit(1)
 
 
 class Core(object):
     # Data retrievial using tweepy
     def __init__(self):
-        self.config = ConfigParser.ConfigParser()
+        self.config = ConfigParser()
         self.absolute_path = get_absolute_path()
         self.config.read(self.absolute_path + '/config.ini')
         self.naive_base_model = get_config_param('Paths', 'naive_base_model')
@@ -83,19 +84,21 @@ class Core(object):
 
     def get_data(self):
         sentences = self.spark_context.textFile(
-            self.absolute_path + "/resources/stanfordSentimentTreebank/datasetSentences.txt")
+            self.absolute_path + "/resources/stanfordSentimentTreebank/dictionary.txt")
         sentiment_labels = self.spark_context.textFile(
             self.absolute_path + "/resources/stanfordSentimentTreebank/sentiment_labels.txt")
 
-        id_sentence = sentences.map(lambda item: item.split('\t'))
+        id_sentence = sentences.map(lambda item: item.split('|'))
         sentences_df = self.rdd_to_dataframe(['id', 'sentence'],
-                                             id_sentence.map(lambda l: (int(l[0]), l[1])), {'id': StringType(),
-                                                                                            'sentence': StringType()})
+                                             id_sentence.map(lambda l: (int(l[1]), l[0])).sortByKey(1, 1),
+                                             {'id': IntegerType(),
+                                              'sentence': StringType()})
         # sentences_df.show()
 
         id_sentiment = sentiment_labels.map(lambda item: item.split('|'))
-        labels_df = self.rdd_to_dataframe(['id', 'sentiment'], id_sentiment.map(lambda l: (int(l[0]) + 1, l[1])),
-                                          {'id': StringType(),
+        labels_df = self.rdd_to_dataframe(['id', 'sentiment'],
+                                          id_sentiment.map(lambda l: (int(l[0]), l[1])).sortByKey(1, 1),
+                                          {'id': IntegerType(),
                                            'sentiment': StringType()})
 
         # labels_df.show()
@@ -103,8 +106,8 @@ class Core(object):
         result = sentences_df.join(labels_df, on="id", how='outer').select("id", sentences_df["sentence"],
                                                                            labels_df["sentiment"])
 
-        result.show()
-        return result
+        result.na.drop().orderBy(result.id).show()
+        return result.na.drop()
 
         # Generic function
         # returns spark_context, sql_context
@@ -171,3 +174,6 @@ class Core(object):
             return 'Positive'
         else:
             return 'Neutral'
+
+    def train_nb_classifier(self):
+        self.get_sentiments(self.get_data())

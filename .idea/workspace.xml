@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="365b5a50-8aed-4a64-9405-b32fb04c24b1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Sentilyse/resources/language-codes.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Sentilyse/resources/naive_base_model.conf/data/._SUCCESS.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Sentilyse/resources/naive_base_model.conf/data/.part-r-00000-ce62ce12-60f0-4a2f-852e-e02cc361838d.snappy.parquet.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Sentilyse/resources/naive_base_model.conf/data/part-r-00000-ce62ce12-60f0-4a2f-852e-e02cc361838d.snappy.parquet" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Sentilyse/resources/naive_base_model.conf/metadata/._SUCCESS.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Sentilyse/resources/naive_base_model.conf/metadata/.part-00000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Sentilyse/resources/naive_base_model.conf/metadata/_SUCCESS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Sentilyse/resources/naive_base_model.conf/metadata/part-00000" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../Sentilyse/resources/naive_base_model.conf/data/_SUCCESS" afterPath="$PROJECT_DIR$/../Sentilyse/resources/j.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentilyse/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Sentilyse/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentilyse/core/helpers.py" afterPath="$PROJECT_DIR$/../Sentilyse/core/helpers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentilyse/main.py" afterPath="$PROJECT_DIR$/../Sentilyse/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentilyse/presentation/QDataViewer.py" afterPath="$PROJECT_DIR$/../Sentilyse/presentation/QDataViewer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentilyse/presentation/QForm.py" afterPath="$PROJECT_DIR$/../Sentilyse/presentation/QForm.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentilyse/LICENSE" afterPath="$PROJECT_DIR$/../Sentilyse/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentilyse/core/Core.py" afterPath="$PROJECT_DIR$/../Sentilyse/core/Core.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentilyse/presentation/interceptor/Interceptor.py" afterPath="$PROJECT_DIR$/../Sentilyse/presentation/interceptor/Interceptor.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentilyse/presentation/widgets/QLabelsPanel.py" afterPath="$PROJECT_DIR$/../Sentilyse/presentation/widgets/QLabelsPanel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/SOStr.txt" afterPath="$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/SOStr.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/datasetSentences.txt" afterPath="$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/datasetSentences.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/original_rt_snippets.txt" afterPath="$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/original_rt_snippets.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Sentilyse/text_analysis.py" afterPath="$PROJECT_DIR$/../Sentilyse/text_analysis.py" />
     </list>
     <ignored path="tweety.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,7 +33,8 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/tweety$SPARK.coverage" NAME="SPARK Coverage Results" MODIFIED="1489425194251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/presentation" />
-    <SUITE FILE_PATH="coverage/TweeLab$SPARK.coverage" NAME="SPARK Coverage Results" MODIFIED="1490042402875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Sentilyse" />
+    <SUITE FILE_PATH="coverage/TweeLab$SPARK.coverage" NAME="SPARK Coverage Results" MODIFIED="1490105939445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Sentilyse" />
+    <SUITE FILE_PATH="coverage/Sentilyse$tso.coverage" NAME="tso Coverage Results" MODIFIED="1490113008283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Sentilyse" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -35,70 +48,10 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Sentilyse/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Core.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Sentilyse/core/Core.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <element signature="e#1645#1992#0" expanded="false" />
-                <element signature="e#2064#2675#0" expanded="false" />
-                <element signature="e#2709#4063#0" expanded="false" />
-                <marker date="1490024090000" expanded="false" signature="1352:1590" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Sentilyse/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text_analysis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Sentilyse/text_analysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-                <element signature="e#263#405#0" expanded="false" />
-                <element signature="e#1248#1672#0" expanded="false" />
-                <element signature="e#1743#2343#0" expanded="false" />
-                <element signature="e#2374#3243#0" expanded="false" />
-                <element signature="e#4018#4703#0" expanded="false" />
-                <element signature="e#4766#5396#0" expanded="false" />
-                <element signature="e#5432#6474#0" expanded="false" />
-                <element signature="e#7394#7947#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Interceptor.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../Sentilyse/presentation/interceptor/Interceptor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#603#713#0" expanded="false" />
-                <element signature="e#770#1194#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -107,46 +60,141 @@
       <file leaf-file-name="QForm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Sentilyse/presentation/QForm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="150">
+              <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QDataViewer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Sentilyse/presentation/QDataViewer.py">
+      <file leaf-file-name="QLabelsPanel.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Sentilyse/presentation/widgets/QLabelsPanel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tsp.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Sentilyse/tsp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#721#1394#0" expanded="false" />
+                <element signature="e#1423#1464#0" expanded="false" />
+                <element signature="e#1530#2376#0" expanded="false" />
+                <element signature="e#2395#4571#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../Sentilyse/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="58" lean-forward="true" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="j.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Sentilyse/resources/j.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="12" column="54" lean-forward="true" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="language-codes.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Sentilyse/resources/language-codes.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="12" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="helpers.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Sentilyse/core/helpers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="75" column="4" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+              <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#175#210#0" expanded="false" />
-                <element signature="e#1568#1665#0" expanded="false" />
-                <element signature="e#1806#2284#0" expanded="false" />
-                <element signature="e#2314#2975#0" expanded="false" />
-                <element signature="e#3010#3235#0" expanded="false" />
-                <marker date="1490040998000" expanded="false" signature="763:1210" ph="..." />
+                <element signature="e#4#1856#0" expanded="false" />
+                <element signature="e#42#102#0" expanded="false" />
+                <element signature="e#122#340#0" expanded="false" />
+                <element signature="e#408#1678#0" expanded="false" />
+                <element signature="e#416#535#0" expanded="false" />
+                <element signature="e#1860#3488#0" expanded="false" />
+                <element signature="e#1878#2463#0" expanded="false" />
+                <element signature="e#2491#3335#0" expanded="false" />
+                <element signature="e#2499#2648#0" expanded="false" />
+                <element signature="e#3492#5056#0" expanded="false" />
+                <element signature="e#3510#4045#0" expanded="false" />
+                <element signature="e#4073#4891#0" expanded="false" />
+                <element signature="e#5060#6533#0" expanded="false" />
+                <element signature="e#5078#5624#0" expanded="false" />
+                <element signature="e#5652#6339#0" expanded="false" />
+                <element signature="e#5660#5828#0" expanded="false" />
+                <element signature="e#6537#7825#0" expanded="false" />
+                <element signature="e#6555#7102#0" expanded="false" />
+                <element signature="e#7130#7641#0" expanded="false" />
+                <element signature="e#7829#8939#0" expanded="false" />
+                <element signature="e#7847#8410#0" expanded="false" />
+                <element signature="e#8438#8767#0" expanded="false" />
+                <element signature="e#8943#9811#0" expanded="false" />
+                <element signature="e#8961#9488#0" expanded="false" />
+                <element signature="e#9516#9669#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/json/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="293" column="4" lean-forward="false" selection-start-line="293" selection-start-column="4" selection-end-line="293" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Core.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Sentilyse/core/Core.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="178" column="43" lean-forward="false" selection-start-line="178" selection-start-column="43" selection-end-line="178" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#1667#2014#0" expanded="false" />
+                <element signature="e#2086#2697#0" expanded="false" />
+                <element signature="e#2731#4188#0" expanded="false" />
+                <element signature="e#4248#4922#0" expanded="false" />
+                <element signature="e#4974#5193#0" expanded="false" />
+                <element signature="e#5242#5888#0" expanded="false" />
+                <element signature="e#5931#6142#0" expanded="false" />
+                <marker date="1490080529000" expanded="false" signature="1374:1612" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="text_analysis.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Sentilyse/text_analysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+              <folding>
+                <element signature="e#263#405#0" expanded="false" />
+                <element signature="e#1249#1673#0" expanded="false" />
+                <element signature="e#1744#2344#0" expanded="false" />
+                <element signature="e#2375#3244#0" expanded="false" />
+                <element signature="e#4019#4704#0" expanded="false" />
+                <element signature="e#5433#6475#0" expanded="false" />
+                <element signature="e#7395#7948#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Interceptor.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Sentilyse/presentation/interceptor/Interceptor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="77" column="79" lean-forward="false" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="79" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#847#1271#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -163,28 +211,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ma</find>
-      <find>type(</find>
-      <find>Target</find>
-      <find>engli</find>
-      <find>token</find>
-      <find>label</find>
-      <find>PUNCTUATION</find>
-      <find>STOPWORDS</find>
-      <find>SparkConsentence</find>
-      <find>save</find>
-      <find>model_path</find>
-      <find>sc</find>
-      <find>features</find>
-      <find>load</find>
-      <find>print</find>
-      <find>model_folder</find>
-      <find>rdd_to_dataframe</find>
-      <find>persist</find>
-      <find>persist(</find>
-      <find>spark</find>
-      <find>split</find>
-      <find>:param spark_context:</find>
       <find>currrent</find>
       <find>self.</find>
       <find>sql_context</find>
@@ -193,9 +219,30 @@
       <find>naive_base_model</find>
       <find>gl.</find>
       <find>SFrame</find>
+      <find>|11854\n</find>
+      <find>11854</find>
+      <find>train_naive_bayes_model</find>
+      <find>train_naive_bayes_model</find>
+      <find>1409</find>
+      <find>get_se</find>
+      <find>tr</find>
+      <find>sess</find>
+      <find>distance</find>
+      <find>distance_matrix</find>
+      <find>json</find>
+      <find>tsp_size</find>
+      <find>Distance</find>
+      <find>city_names</find>
+      <find>Is</find>
+      <find>from</find>
+      <find>call</find>
+      <find>SolveWithParameters</find>
+      <find>-&gt;</find>
+      <find>)</find>
+      <find>locations</find>
+      <find>'</find>
     </findStrings>
     <replaceStrings>
-      <replace>'</replace>
       <replace>container</replace>
       <replace>str(e.message)</replace>
       <replace>QPicture</replace>
@@ -207,7 +254,14 @@
       <replace>naive_base_model</replace>
       <replace>:param spark_context: the currrent spark context</replace>
       <replace>current</replace>
+      <replace>do</replace>
+      <replace>'</replace>
+      <replace>]</replace>
+      <replace>&quot;</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Sentilyse" />
@@ -215,7 +269,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sample/helpers.py" />
         <option value="$PROJECT_DIR$/sample/__init__.py" />
         <option value="$PROJECT_DIR$/sparkutils/SparkLoader.py" />
         <option value="$PROJECT_DIR$/sample/followers.json" />
@@ -248,15 +301,25 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.rst" />
         <option value="$PROJECT_DIR$/README.rst" />
-        <option value="$PROJECT_DIR$/../Sentilyse/core/Core.py" />
         <option value="$PROJECT_DIR$/../Sentilyse/requirements.txt" />
-        <option value="$PROJECT_DIR$/../Sentilyse/text_analysis.py" />
         <option value="$PROJECT_DIR$/../Sentilyse/resources/language-codes.json" />
         <option value="$PROJECT_DIR$/../Sentilyse/presentation/QDataViewer.py" />
         <option value="$PROJECT_DIR$/../Sentilyse/presentation/QForm.py" />
         <option value="$PROJECT_DIR$/../Sentilyse/core/helpers.py" />
-        <option value="$PROJECT_DIR$/../Sentilyse/main.py" />
+        <option value="$PROJECT_DIR$/../Sentilyse/text_analysis.py" />
+        <option value="$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/SOStr.txt" />
+        <option value="$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/datasetSentences.txt" />
+        <option value="$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/original_rt_snippets.txt" />
+        <option value="$PROJECT_DIR$/../Sentilyse/core/Core.py" />
         <option value="$PROJECT_DIR$/../Sentilyse/presentation/interceptor/Interceptor.py" />
+        <option value="$PROJECT_DIR$/../Sentilyse/solve.dat" />
+        <option value="$PROJECT_DIR$/../Sentilyse/google-coords.dat" />
+        <option value="$PROJECT_DIR$/../Sentilyse/tso.py" />
+        <option value="$PROJECT_DIR$/../Sentilyse/main.py" />
+        <option value="$PROJECT_DIR$/../Sentilyse/presentation/widgets/QLabelsPanel.py" />
+        <option value="$PROJECT_DIR$/../Sentilyse/resources/j.json" />
+        <option value="$PROJECT_DIR$/../Sentilyse/tsp.py" />
+        <option value="$PROJECT_DIR$/../Sentilyse/LICENSE" />
       </list>
     </option>
   </component>
@@ -313,34 +376,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sentilyse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sentilyse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="presentation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sentilyse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sentilyse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -386,7 +421,25 @@
       <recent name="$PROJECT_DIR$/sample" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.SPARK">
+  <component name="RunManager" selected="Python.tso">
+    <configuration default="false" name="tso" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Sentilyse" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Sentilyse" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Sentilyse/tsp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -621,9 +674,15 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.SPARK" />
+      <item index="1" class="java.lang.String" itemvalue="Python.tso" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.tso" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -636,24 +695,32 @@
       <option name="presentableId" value="Default" />
       <updated>1487210926473</updated>
     </task>
+    <task id="LOCAL-00001" summary="Automatic language detection &amp; translation to english">
+      <created>1490042648206</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1490042648206</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2786753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20516963" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5493151" sideWeight="0.509693" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4287671" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44931507" sideWeight="0.49030694" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50547945" sideWeight="0.49030694" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5493151" sideWeight="0.49030694" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38219178" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19315068" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -661,26 +728,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5273973" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24246575" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5890411" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11470113" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38219178" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -696,156 +743,23 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Automatic language detection &amp; translation to english" />
+    <option name="LAST_COMMIT_MESSAGE" value="Automatic language detection &amp; translation to english" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="52" />
+      <option name="time" value="61" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/followers.json" />
-    <entry file="file://$PROJECT_DIR$/core/results.json" />
-    <entry file="file://$PROJECT_DIR$/core/tweets.json" />
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/-380151427/PySide/QtCore/QObject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/-380151427/thread.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/subprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="329" column="8" lean-forward="false" selection-start-line="329" selection-start-column="8" selection-end-line="329" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/-380151427/sys.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="192" column="4" lean-forward="false" selection-start-line="192" selection-start-column="4" selection-end-line="192" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/-380151427/exceptions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="73" column="20" lean-forward="false" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/-380151427/PySide/QtGui/QPicture.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/-380151427/PySide/QtGui/QPainter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Sentilyse/presentation/widgets/QLabelsPanel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/SOStr.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/spark-2.0.1-bin-hadoop2.7/python/lib/py4j-0.10.3-src.zip!/py4j/protocol.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="318" column="0" lean-forward="false" selection-start-line="318" selection-start-column="0" selection-end-line="318" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/sframe/data_structures/sframe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="851" column="8" lean-forward="false" selection-start-line="851" selection-start-column="8" selection-end-line="851" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.3/python_stubs/-380151427/graphlab/cython/cy_sframe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="47" column="8" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/graphlab/connect/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/graphlab/toolkits/sentiment_analysis/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/graphlab/data_structures/sarray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11400">
-          <caret line="778" column="0" lean-forward="false" selection-start-line="778" selection-start-column="0" selection-end-line="778" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/graphlab/toolkits/_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="465" column="26" lean-forward="false" selection-start-line="465" selection-start-column="14" selection-end-line="465" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/graphlab/toolkits/classifier/neuralnet_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1089">
-          <caret line="147" column="30" lean-forward="false" selection-start-line="147" selection-start-column="23" selection-end-line="147" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/datasetSplit.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3090">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/dictionary.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -862,6 +776,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="645" column="8" lean-forward="false" selection-start-line="645" selection-start-column="8" selection-end-line="645" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -900,13 +815,6 @@
         <state relative-caret-position="345">
           <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="26" selection-end-column="38" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/sentiment_labels.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-645">
-          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -964,62 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/datasetSentences.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="153" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="153" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Sentilyse/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Sentilyse/text_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <element signature="e#263#405#0" expanded="false" />
-            <element signature="e#1248#1672#0" expanded="false" />
-            <element signature="e#1743#2343#0" expanded="false" />
-            <element signature="e#2374#3243#0" expanded="false" />
-            <element signature="e#4018#4703#0" expanded="false" />
-            <element signature="e#4766#5396#0" expanded="false" />
-            <element signature="e#5432#6474#0" expanded="false" />
-            <element signature="e#7394#7947#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Sentilyse/core/Core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#1645#1992#0" expanded="false" />
-            <element signature="e#2064#2675#0" expanded="false" />
-            <element signature="e#2709#4063#0" expanded="false" />
-            <marker date="1490024090000" expanded="false" signature="1352:1590" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/translate/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1060,49 +912,314 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Sentilyse/presentation/QForm.py">
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        <state relative-caret-position="45">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/dictionary.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="209587" column="55" lean-forward="false" selection-start-line="209587" selection-start-column="50" selection-end-line="209587" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/text_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="53" column="22" lean-forward="false" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+          <folding>
+            <element signature="e#263#405#0" expanded="false" />
+            <element signature="e#1249#1673#0" expanded="false" />
+            <element signature="e#1744#2344#0" expanded="false" />
+            <element signature="e#2375#3244#0" expanded="false" />
+            <element signature="e#4019#4704#0" expanded="false" />
+            <element signature="e#5433#6475#0" expanded="false" />
+            <element signature="e#7395#7948#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/datasetSentences.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="4447" column="37" lean-forward="false" selection-start-line="4447" selection-start-column="37" selection-end-line="4447" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/original_rt_snippets.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="202" column="79" lean-forward="false" selection-start-line="202" selection-start-column="79" selection-end-line="202" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/sentiment_labels.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="11836" column="13" lean-forward="true" selection-start-line="11836" selection-start-column="13" selection-end-line="11836" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/resources/stanfordSentimentTreebank/SOStr.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="49" column="90" lean-forward="false" selection-start-line="49" selection-start-column="90" selection-end-line="49" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/core/Core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="178" column="43" lean-forward="false" selection-start-line="178" selection-start-column="43" selection-end-line="178" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#1667#2014#0" expanded="false" />
+            <element signature="e#2086#2697#0" expanded="false" />
+            <element signature="e#2731#4188#0" expanded="false" />
+            <element signature="e#4248#4922#0" expanded="false" />
+            <element signature="e#4974#5193#0" expanded="false" />
+            <element signature="e#5242#5888#0" expanded="false" />
+            <element signature="e#5931#6142#0" expanded="false" />
+            <marker date="1490080529000" expanded="false" signature="1374:1612" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/solve.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/solve.txt.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/presentation/interceptor/Interceptor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="77" column="79" lean-forward="false" selection-start-line="77" selection-start-column="63" selection-end-line="77" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#847#1271#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/solve.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/google-coords.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="20" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/mapbox/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/mapbox/services/distance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/mapbox/services/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="36" column="23" lean-forward="false" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/argparse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="1699" column="8" lean-forward="false" selection-start-line="1699" selection-start-column="8" selection-end-line="1699" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/googlemaps/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="365" column="48" lean-forward="false" selection-start-line="365" selection-start-column="48" selection-end-line="365" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/googlemaps/distance_matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-786">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Sentilyse/core/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="75" column="4" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+        <state relative-caret-position="129">
+          <caret line="55" column="8" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="8" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <element signature="e#175#210#0" expanded="false" />
+            <element signature="e#768#1213#0" expanded="false" />
             <element signature="e#1568#1665#0" expanded="false" />
             <element signature="e#1806#2284#0" expanded="false" />
             <element signature="e#2314#2975#0" expanded="false" />
             <element signature="e#3010#3235#0" expanded="false" />
-            <marker date="1490040998000" expanded="false" signature="763:1210" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="293" column="4" lean-forward="false" selection-start-line="293" selection-start-column="4" selection-end-line="293" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/presentation/QForm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/presentation/widgets/QLabelsPanel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/ortools/constraint_solver/pywrapcp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="3537" column="8" lean-forward="false" selection-start-line="3537" selection-start-column="8" selection-end-line="3537" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Sentilyse/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Sentilyse/presentation/interceptor/Interceptor.py">
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/resources/j.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+        <state relative-caret-position="15">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#603#713#0" expanded="false" />
-            <element signature="e#770#1194#0" expanded="false" />
+            <element signature="e#4#1856#0" expanded="false" />
+            <element signature="e#42#102#0" expanded="false" />
+            <element signature="e#122#340#0" expanded="false" />
+            <element signature="e#408#1678#0" expanded="false" />
+            <element signature="e#416#535#0" expanded="false" />
+            <element signature="e#1860#3488#0" expanded="false" />
+            <element signature="e#1878#2463#0" expanded="false" />
+            <element signature="e#2491#3335#0" expanded="false" />
+            <element signature="e#2499#2648#0" expanded="false" />
+            <element signature="e#3492#5056#0" expanded="false" />
+            <element signature="e#3510#4045#0" expanded="false" />
+            <element signature="e#4073#4891#0" expanded="false" />
+            <element signature="e#5060#6533#0" expanded="false" />
+            <element signature="e#5078#5624#0" expanded="false" />
+            <element signature="e#5652#6339#0" expanded="false" />
+            <element signature="e#5660#5828#0" expanded="false" />
+            <element signature="e#6537#7825#0" expanded="false" />
+            <element signature="e#6555#7102#0" expanded="false" />
+            <element signature="e#7130#7641#0" expanded="false" />
+            <element signature="e#7829#8939#0" expanded="false" />
+            <element signature="e#7847#8410#0" expanded="false" />
+            <element signature="e#8438#8767#0" expanded="false" />
+            <element signature="e#8943#9811#0" expanded="false" />
+            <element signature="e#8961#9488#0" expanded="false" />
+            <element signature="e#9516#9669#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/tsp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#721#1394#0" expanded="false" />
+            <element signature="e#1423#1464#0" expanded="false" />
+            <element signature="e#1530#2376#0" expanded="false" />
+            <element signature="e#2395#4571#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Sentilyse/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="58" lean-forward="true" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>

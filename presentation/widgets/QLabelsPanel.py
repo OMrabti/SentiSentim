@@ -10,7 +10,7 @@ class QLabelsPanel(QWidget):
 
     def add_label(self, text):
         label = QLabel(text)
-        label.setAlignment(QtCore.Qt.AlignCenter)
+        label.setAlignment(QtCore.Qt.AlignLeft | QtCore.Qt.AlignVCenter)
         self.layout.addWidget(label)
         self.labels.update({text: label})
         return label

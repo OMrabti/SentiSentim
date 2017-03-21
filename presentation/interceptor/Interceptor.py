@@ -18,6 +18,7 @@ class Interceptor(object):
         self.form = None
         self.core = Core()
         self.absolute_path = self.get_absolute_path()
+        # self.core.train_nb_classifier() last testing accuracy = 62 percent
         pass
 
     @staticmethod
@@ -64,17 +65,17 @@ class Interceptor(object):
             language = self.form.components['labels_panel'].labels['language']
             result = self.form.components['labels_panel'].labels['result']
             elapsed_time = self.form.components['labels_panel'].labels['time']
-            sentence.setText('The sentence is:  Loading ...')
-            language.setText('Original language :  Loading ...')
+            sentence.setText('Sentence in english:  Loading ...')
+            language.setText('Original language:  Loading ...')
             result.setText('Prediction: Loading ...')
             elapsed_time.setText('Elapsed Time:  Loading ...')
             for lang in language_codes:
                 if lang['alpha2'] == detect(query):
-                    language.setText('Original language : ' + lang['English'] + '\n')
+                    language.setText('Original language: ' + lang['English'] + '\n')
 
             translated_query = translator.translate(query, 'en', detect(query))
             chunked_text = ''
-            for chunk in chunkstring('The sentence is: ' + translated_query, 90):
+            for chunk in chunkstring('Sentence in english: ' + translated_query, 90):
                 chunked_text += (chunk + '\n')
             sentence.setText(chunked_text + '\n')
             sentence.repaint()

@@ -18,6 +18,7 @@ except ImportError as e:
 try:
 
     init()
+
     from pyspark.mllib.feature import HashingTF
     from pyspark.mllib.regression import LabeledPoint
     from pyspark.mllib.classification import NaiveBayes, NaiveBayesModel
